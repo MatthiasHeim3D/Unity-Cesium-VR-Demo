@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showCreditsOnScreen: 0
-  _tilesetSource: 0
+  _tilesetSource: 2
   _url: 
   _ionAssetID: 1
   _ionAccessToken: 
