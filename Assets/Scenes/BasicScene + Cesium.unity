@@ -173,7 +173,7 @@ MonoBehaviour:
   _latitude: 0
   _longitude: 0
   _height: 0
-  _ecefX: 6378137
+  _ecefX: 0
   _ecefY: 0
   _ecefZ: 0
   _scale: 0.000001
@@ -444,7 +444,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1123696580}
   - component: {fileID: 1123696582}
-  - component: {fileID: 1123696581}
+  - component: {fileID: 1123696583}
+  - component: {fileID: 1123696584}
   m_Layer: 0
   m_Name: Cesium World Terrain
   m_TagString: Untagged
@@ -467,27 +468,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 196229473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1123696581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123696579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bca0907bd759be4e8b4d7ca5f84131c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _materialKey: 0
-  _showCreditsOnScreen: 0
-  _maximumScreenSpaceError: 1
-  _maximumTextureSize: 2048
-  _maximumSimultaneousTileLoads: 20
-  _subTileCacheBytes: 16777216
-  _ionAssetID: 2
-  _ionAccessToken: 
-  _ionServer: {fileID: 11400000, guid: 27064ac03601123479be94ec0b838ec9, type: 2}
 --- !u!114 &1123696582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,7 +508,49 @@ MonoBehaviour:
   _showTilesInHierarchy: 0
   _updateInEditor: 1
   _logSelectionStats: 0
-  _createPhysicsMeshes: 1
+  _createPhysicsMeshes: 0
+--- !u!114 &1123696583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123696579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d7fd0be28f9ec24e8a773c68e5068c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialKey: 0
+  _showCreditsOnScreen: 0
+  _maximumScreenSpaceError: 2
+  _maximumTextureSize: 2048
+  _maximumSimultaneousTileLoads: 20
+  _subTileCacheBytes: 16777216
+  _baseUrl: http://localhost:8080/geoserver/geovisdemo/wms
+  _layers: NE1_50M_SR_W
+  _tileWidth: 256
+  _tileHeight: 256
+  _minimumLevel: 0
+  _maximumLevel: 14
+--- !u!114 &1123696584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123696579}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fdfde1230d7c3b49b13b76a10b1327d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialKey: 1
+  _showCreditsOnScreen: 0
+  _maximumScreenSpaceError: 2
+  _maximumTextureSize: 2048
+  _maximumSimultaneousTileLoads: 20
+  _subTileCacheBytes: 16777216
 --- !u!1 &1249617917
 GameObject:
   m_ObjectHideFlags: 0
